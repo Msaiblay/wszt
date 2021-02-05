@@ -1,0 +1,31 @@
+Online Academy ERD
+
+Admin
+certificate ထုပ်ပေး;
+
+
+Teacher
+ couse တင်,
+
+
+Student
+ ရှာ >> ဝယ်
+
+====================================================================================
+
+couse
+id,name, summary, discription, requirement price, couse content, teacher_id, category_id, video_id,
+
+category
+id, name,
+
+video
+
+teacher
+ id, name,
+
+
+
+
+
+

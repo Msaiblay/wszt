@@ -1,0 +1,15 @@
+WP Car showroom
+
+car
+ id, name, modelyear, price, color, description, brand_id, category_id, user_id
+
+category
+id, name, logo,
+
+Brand
+id, name, photo
+
+order
+id, voucherno, totalamount, totalbook, orderdate, status, car_id
+
+
