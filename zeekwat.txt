@@ -1,29 +1,71 @@
 Online Academy ERD
 
 Admin
-certificate ထုပ်ပေး;
-
+>certificate ထုပ်ပေး,
+>Recive payment from student and paid to teacher
+>manage categories
+>customer care
+>Teacher management
+>Student management
 
 Teacher
- couse တင်,
-
+ course တင်(create new couse)>>
+    Name(Title)
+    category
+    description
+    requirement
+    price
+    access status
+     course content (Edit) >>
+        Create chapter >>
+            Add Lesson >>
+ >course management (**course ဖျက်ရင် chapter နဲ့ lesson အားလုံးပျက်မယ်)
+ >chapter management(**chapter ဖျက်ရင် lesson အားလုံးပျက်မယ်)
+ >lesson management
 
 Student
- ရှာ >> ဝယ်
+ ရှာ >> ဝယ် >> ငွေချေ >> သင်ယူ
 
-====================================================================================
+ =============================================================================
 
-couse
-id,name, summary, discription, requirement price, couse content, teacher_id, category_id, video_id,
+ Relationship
+
+ category <=> course
+    category တစ်ခုမှာ course အများ/ course တစ်ခုက category တစ်မျိုးပဲ
+
+ course <=> Chapter
+    course တစ်ခုမှာ Chapter အများ/  Chapter တစ်ခုက course တစ်ခုမှာပဲပါ
+
+ Chapter <=> Lesson
+    Chapter တစ်ခုမှာ Lesson အများ/   Lesson တစ်ခုက Chapter တစ်ခုမှာပဲပါ
+
+
+ teacher <=> course
+    teacher တစ်ယောက်က course အများရေး / course တစ်ခုကို teacher တစ်ယောက်ပဲရေး
+
+
+===============================================================================
+
+course
+id,name, description, requirement,access status, price,  teacher_id, category_id,
+
+Chapter
+    id, name, course_id,
+
+Lesson
+    id, name,video, teacher_id, course_id,Chapter_id
+
 
 category
 id, name,
 
-video
-
 teacher
- id, name,
+ id, name, address, email,phone, gender, dob, bio, Role_id
 
+
+ =============================================================================
+ Notation
+ **msai note
 
 
 
