@@ -1,4 +1,18 @@
 WP Car showroom
+======================================================
+Relationship
+
+ category <=> car
+    category တစ်ခုမှာ car အများ/ car တစ်စီးက category တစ်မျိုးမှာပဲ
+
+ brand<=> car
+    brand တစ်ခုမှာ car အများ/  car တစ်စီးက brand တစ်ခုမှာပဲပါ
+
+ seller <=> car
+    seller တစ်ယောက်က car အများရောင်း / car တစ်စီးကို seller တစ်ယောက်ပဲရောင်း
+
+=======================================================
+Database Structure
 
 car
  id, name, modelyear, price, color, description, brand_id, category_id, user_id
@@ -11,5 +25,4 @@ id, name, photo
 
 order
 id, voucherno, totalamount, totalbook, orderdate, status, car_id
-
 
