@@ -44,23 +44,7 @@ Student
     teacher တစ်ယောက်က course အများရေး / course တစ်ခုကို teacher တစ်ယောက်ပဲရေး
 
 
-===============================================================================
-
-course
-id,name, description, requirement,access status, price,  teacher_id, category_id,
-
-Chapter
-    id, name, course_id,
-
-Lesson
-    id, name,video, teacher_id, course_id,Chapter_id
-
-
-category
-id, name,
-
-teacher
- id, name, address, email,phone, gender, dob, bio, Role_id
+===========================================================================
 
 
  =============================================================================
